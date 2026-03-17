@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 .cabeçalho {
-    background-color: cornflowerblue;
+    background-color: rgb(17, 92, 190);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -17,14 +18,86 @@
 
 .ul-lista {
     display: flex;
-    gap:  20px;
+    gap: 20px;
 }
 
-    .ul-lista li a {
+.ul-lista li a {
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-size: 20px;
     text-transform: uppercase;
     font-weight: 800;
-    }
+}
+
+.img-section-01 {
+    width: 500px;
+
+}
+
+.section-01 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    padding: 50px;
+    font-size: 20px;
+    gap: 20px;
+}
+
+span {
+    color: rgb(17, 92, 190);
+    font-size: 40px;
+}
+
+.section-02 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-direction: column;
+    padding: 50px;
+    background-color: black;
+    color: white;
+}
+
+.parágrafo-section-02 h2 {
+    font-size: 30px;
+    color:  rgb(17, 92, 190);
+    text-transform: uppercase;
+}
+
+.parágrafo-section-02 p {
+    font-size: 20px;
+}
+
+.div-icons {
+    padding: 10px;
+    font-size: 40px;
+    align-items: center;
+    color: rgb(17, 92, 190);
+}
+
+.section-03 { 
+    background-image: url(mercedes-benz-a-class-w177-spa-a-class-2400x2400-05-2025.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 350px;
+
+
+}
+
+.section-03 button {
+    padding: 7px;
+    width: 150;
+    background-color: white;
+    color: rgb(17, 92, 190);
+    font-weight: 800;
     
+}
