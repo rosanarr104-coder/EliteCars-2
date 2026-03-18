@@ -1,11 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+*{ /* Estilização universal */
+    scroll-behavior: smooth; /* transição universal no scroll de rolagem */
+    font-family: 'Courier New', Courier, monospace; /* Família de fonte universal */
+    list-style: none; /* Removendo estilo de lista Universal */
+    margin: 0; /* Removendo os espaços laterais e superios */
+    padding: 0; /* Desabilitando preechimento aplicado por padrão */
+    
+}
+
 .cabeçalho {
     background-color: rgb(17, 92, 190);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     padding: 30px;
+    position: sticky; /* faz com que o elemento fique grudado na tela quando o usuario rolar a tela */
+    top: 0; /* define que o elemento ficara preso ao top da tela (0px) de distancia da tela */
+    left: 0; /* define que o elemento à equerda da página, mantendo 0px de distançância */
+    z-index: 1; /* controla a sobreposição do elemento sobre outros elementos da página */
 }
 
 .img-header {
@@ -29,6 +42,10 @@
     font-weight: 800;
 }
 
+.ul-lista li a:hover {
+    color:red;
+}
+
 .img-section-01 {
     width: 500px;
 
@@ -46,9 +63,36 @@
     gap: 20px;
 }
 
+.div-01 img {
+    box-shadow: 5px 5px 10px rgb(248, 247, 247);
+    
+}
+
+.div-01 img:hover {
+    box-shadow: 15px 15px 25px rgb(248, 247, 247);
+    transition: 0.8s;
+}
+
 span {
     color: rgb(17, 92, 190);
     font-size: 40px;
+}
+
+.whatsapp img {  /* alterando tamanho do icon whatsapp */
+    width: 50px; /* largura do icon */
+}
+
+
+.whatsapp { /* div que guarda o icon whatsapp */
+    position: fixed; /* posicionamento fixo */
+    right: 25px; /* posicionamento à direita (25px)  */
+    bottom: 25px; /* posicionamento do bottom */
+
+}
+
+.whatsapp img:hover {
+    background-color: red;
+    color: black;
 }
 
 .section-02 {
@@ -100,4 +144,97 @@ span {
     color: rgb(17, 92, 190);
     font-weight: 800;
     
+}
+
+.button:hover {
+    background-color: red;
+    color: white;
+}
+
+.section-04 div {
+    width: 300px;
+    height: 300px;
+    background-color: gray;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 10px 10px 20px black;
+}
+
+
+.section-04 div:hover {
+    box-shadow: 20px 20px 30px black;
+    transition: 1,5s;
+
+}
+
+
+.section-04 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+    padding: 60px;
+}
+
+.caixa-01 h2 {
+    font-size: 90px;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.caixa-01 p {
+    font-size: 20px;
+    font-weight: 700px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+
+}
+
+.fa-star, .fa-star-half {
+    font-size: 30px;
+    color: gold;
+}
+
+.caixa-02 {
+    background-image: url(1740020442411.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+.caixa-03 p {
+    font-size: 20px;
+    font-weight: 700px;
+}
+
+.caixa-03 button {
+    padding: 7px;
+    background-color: black;
+    color: white;
+    width: 130px;
+    border: none;
+}
+
+.caixa-03 i {
+    font-size: 60px;
+}
+
+footer {
+    background-color: black;
+    color:rgb(17, 92, 190);;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer .fa-github, .fa-x-twitter, .fa-square-instagram {
+    color:  rgb(17, 92, 190);
+    font-size: 40px;
+}
+
+.caixa-footer {
+    text-align: center;
 }
